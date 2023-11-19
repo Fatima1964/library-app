@@ -1,36 +1,48 @@
 /* src/BookList.css */
-
-/* Styling for the delete button */
-.delete {
-    color: red;
-    cursor: pointer;
-    margin-left: 5px;
-  }
   
   /* Styling for buttons */
   button {
-    padding: 10px 20px;
-    background-color: #e74c3c;
+    background-color: #3498db;
     color: #fff;
     border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 4px;
-    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
   }
   
-  /* Hover effect for buttons */
+  button:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: perspective(1px) scale(1, 0.95);
+    transition: transform 0.3s;
+  }
+  
   button:hover {
-    background-color: #c0392b;
+    transform: translateY(-5px);
   }
   
+  button:hover:before {
+    transform: perspective(1px) scale(1, 1);
+  }
+  
+    
   /* Styling for input fields */
   input {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 2px;
-    width: 75%;
+    width: 50%;
+    margin-left: 8em;
   }
   
   /* Styling for the add book form */

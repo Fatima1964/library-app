@@ -2,7 +2,7 @@
 /* Styling for the body */
 body {
   /* Background image properties */
-  background-image: url('C:\\Users\\Fatim\\OneDrive\\Desktop\\Booklist\\my-book-list\\public\\images\\home.jpg');
+  background-image: url('/public/image/home.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,21 +36,26 @@ h1 {
   color: #f4f6f6;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-}
+} 
 
-/* Styling for paragraphs */
+  /* Styling for paragraphs */
 p {
   color: #fafcff;
   text-align: center;
   padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fafcff; 
+  animation: typing 3s steps(40); /* Reference Youtube Video  */
 }
 
-/* Styling for secondary headings */
-h2 {
-  color: #e8e8f0;
-  font-size: 30px;
-  font-family: Verdana;
-  text-align: center;
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /* Welcome container pop-up effect */
@@ -61,6 +66,7 @@ h2 {
   border-radius: 25px;
   transition: transform 0.5s ease;
   margin-bottom: 3em;
+  
 }
 
 /* Welcome container hover effect */
