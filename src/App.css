@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* src/App.css */
+/* Styling for the body */
+body {
+  /* Background image properties */
+  background-image: url('C:\\Users\\Fatim\\OneDrive\\Desktop\\Booklist\\my-book-list\\public\\images\\home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for the main container */
+.container {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: #130f0f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-left: 10em;
+  transform: perspective(800px) rotateX(10deg);
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container hover effect */
+.container:hover {
+  transform: perspective(800px) rotateX(0deg);
 }
+
+/* Styling for the main heading */
+h1 {
+  color: #f4f6f6;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Styling for paragraphs */
+p {
+  color: #fafcff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styling for secondary headings */
+h2 {
+  color: #e8e8f0;
+  font-size: 30px;
+  font-family: Verdana;
+  text-align: center;
+}
+
+/* Welcome container pop-up effect */
+.welcome-container {
+  background-color: #050506;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  transition: transform 0.5s ease;
+  margin-bottom: 3em;
+}
+
+/* Welcome container hover effect */
+.welcome-container:hover {
+  transform: scale(1.05);
+}
+
