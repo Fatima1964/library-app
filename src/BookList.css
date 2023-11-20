@@ -2,10 +2,10 @@
   
   /* Styling for buttons */
   button {
-    background-color: #3498db;
+    background-color: #19679b;
     color: #fff;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -41,55 +41,79 @@
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 2px;
-    width: 50%;
+    width: 70%;
+    height: 25px;
     margin-left: 8em;
+
   }
   
-  /* Styling for the add book form */
-  .add-form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  /* Styling for book details */
-  .book-details {
-    text-align: left;
-  }
-  
-  /* Styling for book title */
-  .book-title {
-    margin-top: 5px;
-    padding-right: 15em;
-  }
-  
-  /* Hover effect for book list items */
-  .book-container li:hover {
-    background-color: #364682;
-  }
-  
-  /* Styling for unordered list */
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Styling for list items */
-  li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #92b5f7;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-family: Verdana, sans-serif, serif;
-  }
-  
-  /* Hover effect for list items */
-  li:hover {
-    background-color: #364682;
-  }
-  
+  /* Container for the form */
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for book details */
+.book-details {
+  text-align: center;
+}
+
+/* Styling for book title */
+.book-title {
+  margin-top: 8px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* Hover effect for book list items */
+.book-container li {
+  transition: transform 0.3s ease;
+}
+
+.book-container li:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for unordered list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for list items (books) */
+li {
+  background-image: url('/public/image/book2.png');
+  background-size: cover;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: larger;
+  color: rgb(174, 9, 92);
+  font-family: fantasy;
+}
+
+/* Hover effect for list items (books) */
+li:hover {
+  color: #0a0113;
+}
+
+/* Optional: Add a subtle animation to the hover effect */
+li:hover {
+  transform: scale(1.05);
+}

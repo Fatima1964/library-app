@@ -45,6 +45,7 @@ p {
   padding: 10px;
   white-space: nowrap;
   overflow: hidden;
+  font-size:larger;
   border-right: 2px solid #fafcff; 
   animation: typing 5s steps(40); /* Referenced Code Snippet https://css-tricks.com/snippets/css/typewriter-effect/ */
 }
