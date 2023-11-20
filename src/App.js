@@ -5,6 +5,7 @@ import AddBookForm from './AddBookForm';
 import { fetchBooks, addBook, deleteBook } from './Api';
 import "./App.css";
 
+
 // Main component for the application
 function App() {
   // State to manage the list of books and the new book title input
@@ -54,8 +55,9 @@ function App() {
   return (
     <div>
       <div className="welcome-container">
+      <img src="/image/Logo.png" alt="Bookshelf Bliss Logo" />
         <h1>📚Bookshelf Bliss: Your Library, Your Way!</h1>
-               <p>Shelf Harmony:📔Search And Save Your Favorite Books Because Your Books Deserve a Home🔍</p>
+        <p>Shelf Harmony:📔Search And Save Your Favorite Books Because Your Books Deserve a Home🔍</p>
       </div>
       
       {/* AddBookForm component */}
@@ -68,7 +70,7 @@ function App() {
       {/* Display the list of books */}
       {Array.isArray(books) && books.length > 0 ? (
         <BookList books={books} onDelete={handleDeleteBook} />
-      ) : (    /*Referenced ChatGPT*/
+      ) : (
         <p>Loading Books......</p>
       )}
     </div>
