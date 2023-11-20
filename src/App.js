@@ -57,7 +57,7 @@ function App() {
       <div className="welcome-container">
       <img src="/image/Logo.png" alt="Logo" />
         <h1>📚Bookshelf Bliss: Your Library, Your Way!</h1>
-        <p>Shelf Harmony:📔Search And Save Your Favorite Books Because Your Books Deserve a Home🔍</p>
+        <p>Shelf Harmony:🔍Search And Save Your Favorite Books Because Your Books Deserve a Home📔</p>
       </div>
       
       {/* AddBookForm component */}

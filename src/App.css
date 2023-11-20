@@ -18,7 +18,7 @@ body {
   display:flex;
   width: 400px;
   height: auto;
-  padding: 20px;
+  padding: 10px;
   background-color: #130f0f;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin-left: 10em;
@@ -33,7 +33,7 @@ body {
 
 /* Styling for the main heading */
 h1 {
-      color: #f8f8f7;
+    color: #f8f8f7;
     text-shadow: 0 0 10px #2073ef, 0 0 20px #0048ff, 0 0 30px #00bbff; 
 }
 
