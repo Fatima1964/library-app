@@ -68,7 +68,7 @@ function App() {
       {/* Display the list of books */}
       {Array.isArray(books) && books.length > 0 ? (
         <BookList books={books} onDelete={handleDeleteBook} />
-      ) : (
+      ) : (    /*Referenced ChatGPT*/
         <p>Loading Books......</p>
       )}
     </div>

@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 
-/* Styling for the main container */
+/* Styling for the title container */
 .container {
   width: 400px;
   height: auto;
@@ -36,7 +36,7 @@ h1 {
     text-shadow: 0 0 10px #2073ef, 0 0 20px #0048ff, 0 0 30px #00bbff; 
 }
 
- /* Styling for paragraphs */
+ /* Styling for text */
 p {
   color: #fafcff;
   text-shadow: 0 0 10px #2073ef, 0 0 20px #0048ff, 0 0 30px #00bbff;
@@ -45,7 +45,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #fafcff; 
-  animation: typing 5s steps(40); /* Reference Youtube Video  */
+  animation: typing 5s steps(40); /* Referenced Code Snippet https://css-tricks.com/snippets/css/typewriter-effect/ */
 }
 
 @keyframes typing {
