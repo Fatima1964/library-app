@@ -5,7 +5,7 @@
     background-color: #19679b;
     color: #fff;
     border: none;
-    padding: 20px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -69,7 +69,6 @@
   margin-top: 8px;
   font-size: 1.5em;
   font-weight: bold;
-  color: #1a1a1a;
 }
 
 /* Hover effect for book list items */
@@ -104,13 +103,13 @@ li {
   flex-direction: column;
   justify-content: space-between;
   font-size: larger;
-  color: rgb(174, 9, 92);
+  color: rgb(11, 10, 10);
   font-family: fantasy;
 }
 
 /* Hover effect for list items (books) */
 li:hover {
-  color: #0a0113;
+  color: rgb(174, 9, 92);
 }
 
 /* Optional: Add a subtle animation to the hover effect */
