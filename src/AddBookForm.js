@@ -17,7 +17,7 @@ function AddBookForm({ newBookTitle, setNewBookTitle, handleAddBook }) {
       <input
         type="text"
         id="newBookTitle"
-        placeholder='New Book Title'
+        placeholder='Enter Book Title'
         value={newBookTitle}
         onChange={(e) => setNewBookTitle(e.target.value)}
       />

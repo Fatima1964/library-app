@@ -71,7 +71,7 @@ function App() {
       {Array.isArray(books) && books.length > 0 ? (
         <BookList books={books} onDelete={handleDeleteBook} />
       ) : (
-        <p>Updating Books.......</p>
+        <p>Updating Library.......</p>
       )}
     </div>
   );
